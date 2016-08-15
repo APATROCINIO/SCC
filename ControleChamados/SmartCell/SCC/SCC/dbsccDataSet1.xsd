@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbsccDataSet1" targetNamespace="http://tempuri.org/dbsccDataSet1.xsd" xmlns:mstns="http://tempuri.org/dbsccDataSet1.xsd" xmlns="http://tempuri.org/dbsccDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbsccConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbsccConnectionString3 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SCC.Properties.Settings.GlobalReference.Default.dbsccConnectionString3" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_chamadocelularTableAdapter" GeneratorDataComponentClassName="view_chamadocelularTableAdapter" Name="view_chamadocelular" UserDataComponentName="view_chamadocelularTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbsccConnectionString3 (Settings)" DbObjectName="dbscc.view_chamadocelular" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `DESCRICAOTIPOCHAMADO`, `IDCHAMADO`, `DATAAGENDAMENTO`, `IDITEMCHAMADO`, `CELULARPOSSUICARREGADOR`, `CELULARPOSSUICARTAOMEMORIA`, `CELULARPOSSUICHIP`, `IDPRODUTO`, `NOMEPRODUTO`, `NOMEUSUARIO`, `NOMECLIENTE`, `EMPRESA`, `CPF_CNPJ`, `EMAIL`, `RUA`, `NUMERO`, `BAIRRO`, `CIDADE`, `UF`, `CELULAR1`, `CELULAR2`, `TELFIXO1`, `TELFIXO2`, `WHATSAPP` FROM `dbscc`.`view_chamadocelular`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DESCRICAOTIPOCHAMADO" DataSetColumn="DESCRICAOTIPOCHAMADO" />
+              <Mapping SourceColumn="IDCHAMADO" DataSetColumn="IDCHAMADO" />
+              <Mapping SourceColumn="DATAAGENDAMENTO" DataSetColumn="DATAAGENDAMENTO" />
+              <Mapping SourceColumn="IDITEMCHAMADO" DataSetColumn="IDITEMCHAMADO" />
+              <Mapping SourceColumn="CELULARPOSSUICARREGADOR" DataSetColumn="CELULARPOSSUICARREGADOR" />
+              <Mapping SourceColumn="CELULARPOSSUICARTAOMEMORIA" DataSetColumn="CELULARPOSSUICARTAOMEMORIA" />
+              <Mapping SourceColumn="CELULARPOSSUICHIP" DataSetColumn="CELULARPOSSUICHIP" />
+              <Mapping SourceColumn="IDPRODUTO" DataSetColumn="IDPRODUTO" />
+              <Mapping SourceColumn="NOMEPRODUTO" DataSetColumn="NOMEPRODUTO" />
+              <Mapping SourceColumn="NOMEUSUARIO" DataSetColumn="NOMEUSUARIO" />
+              <Mapping SourceColumn="NOMECLIENTE" DataSetColumn="NOMECLIENTE" />
+              <Mapping SourceColumn="EMPRESA" DataSetColumn="EMPRESA" />
+              <Mapping SourceColumn="CPF_CNPJ" DataSetColumn="CPF_CNPJ" />
+              <Mapping SourceColumn="EMAIL" DataSetColumn="EMAIL" />
+              <Mapping SourceColumn="RUA" DataSetColumn="RUA" />
+              <Mapping SourceColumn="NUMERO" DataSetColumn="NUMERO" />
+              <Mapping SourceColumn="BAIRRO" DataSetColumn="BAIRRO" />
+              <Mapping SourceColumn="CIDADE" DataSetColumn="CIDADE" />
+              <Mapping SourceColumn="UF" DataSetColumn="UF" />
+              <Mapping SourceColumn="CELULAR1" DataSetColumn="CELULAR1" />
+              <Mapping SourceColumn="CELULAR2" DataSetColumn="CELULAR2" />
+              <Mapping SourceColumn="TELFIXO1" DataSetColumn="TELFIXO1" />
+              <Mapping SourceColumn="TELFIXO2" DataSetColumn="TELFIXO2" />
+              <Mapping SourceColumn="WHATSAPP" DataSetColumn="WHATSAPP" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_chamadopadraoTableAdapter" GeneratorDataComponentClassName="view_chamadopadraoTableAdapter" Name="view_chamadopadrao" UserDataComponentName="view_chamadopadraoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbsccConnectionString3 (Settings)" DbObjectName="dbscc.view_chamadopadrao" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        DESCRICAOTIPOCHAMADO, IDCHAMADO, DATAAGENDAMENTO, VALOTOTAL, IDITEMCHAMADO, PADRAOPOSSUICARREGADOR, PADRAOMARCAMODELOSERIE, VALORITEM, IDPRODUTO, NOMEPRODUTO, 
+                         NOMEUSUARIO, NOMECLIENTE, EMPRESA, CPF_CNPJ, EMAIL, RUA, NUMERO, BAIRRO, CIDADE, UF, CELULAR1, CELULAR2, TELFIXO1, TELFIXO2, WHATSAPP
+FROM            view_chamadopadrao
+WHERE        (IDCHAMADO = @idChamado)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="idChamado" ColumnName="IDCHAMADO" DataSourceName="dbscc.view_chamadopadrao" DataTypeServer="int(11)" DbType="Int32" Direction="Input" ParameterName="@idChamado" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="IDCHAMADO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DESCRICAOTIPOCHAMADO" DataSetColumn="DESCRICAOTIPOCHAMADO" />
+              <Mapping SourceColumn="IDCHAMADO" DataSetColumn="IDCHAMADO" />
+              <Mapping SourceColumn="DATAAGENDAMENTO" DataSetColumn="DATAAGENDAMENTO" />
+              <Mapping SourceColumn="VALOTOTAL" DataSetColumn="VALOTOTAL" />
+              <Mapping SourceColumn="IDITEMCHAMADO" DataSetColumn="IDITEMCHAMADO" />
+              <Mapping SourceColumn="PADRAOPOSSUICARREGADOR" DataSetColumn="PADRAOPOSSUICARREGADOR" />
+              <Mapping SourceColumn="PADRAOMARCAMODELOSERIE" DataSetColumn="PADRAOMARCAMODELOSERIE" />
+              <Mapping SourceColumn="VALORITEM" DataSetColumn="VALORITEM" />
+              <Mapping SourceColumn="IDPRODUTO" DataSetColumn="IDPRODUTO" />
+              <Mapping SourceColumn="NOMEPRODUTO" DataSetColumn="NOMEPRODUTO" />
+              <Mapping SourceColumn="NOMEUSUARIO" DataSetColumn="NOMEUSUARIO" />
+              <Mapping SourceColumn="NOMECLIENTE" DataSetColumn="NOMECLIENTE" />
+              <Mapping SourceColumn="EMPRESA" DataSetColumn="EMPRESA" />
+              <Mapping SourceColumn="CPF_CNPJ" DataSetColumn="CPF_CNPJ" />
+              <Mapping SourceColumn="EMAIL" DataSetColumn="EMAIL" />
+              <Mapping SourceColumn="RUA" DataSetColumn="RUA" />
+              <Mapping SourceColumn="NUMERO" DataSetColumn="NUMERO" />
+              <Mapping SourceColumn="BAIRRO" DataSetColumn="BAIRRO" />
+              <Mapping SourceColumn="CIDADE" DataSetColumn="CIDADE" />
+              <Mapping SourceColumn="UF" DataSetColumn="UF" />
+              <Mapping SourceColumn="CELULAR1" DataSetColumn="CELULAR1" />
+              <Mapping SourceColumn="CELULAR2" DataSetColumn="CELULAR2" />
+              <Mapping SourceColumn="TELFIXO1" DataSetColumn="TELFIXO1" />
+              <Mapping SourceColumn="TELFIXO2" DataSetColumn="TELFIXO2" />
+              <Mapping SourceColumn="WHATSAPP" DataSetColumn="WHATSAPP" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbsccDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbsccDataSet1" msprop:Generator_UserDSName="dbsccDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_chamadocelular" msprop:Generator_TableClassName="view_chamadocelularDataTable" msprop:Generator_TableVarName="tableview_chamadocelular" msprop:Generator_RowChangedName="view_chamadocelularRowChanged" msprop:Generator_TablePropName="view_chamadocelular" msprop:Generator_RowDeletingName="view_chamadocelularRowDeleting" msprop:Generator_RowChangingName="view_chamadocelularRowChanging" msprop:Generator_RowEvHandlerName="view_chamadocelularRowChangeEventHandler" msprop:Generator_RowDeletedName="view_chamadocelularRowDeleted" msprop:Generator_RowClassName="view_chamadocelularRow" msprop:Generator_UserTableName="view_chamadocelular" msprop:Generator_RowEvArgName="view_chamadocelularRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DESCRICAOTIPOCHAMADO" msprop:Generator_ColumnVarNameInTable="columnDESCRICAOTIPOCHAMADO" msprop:Generator_ColumnPropNameInRow="DESCRICAOTIPOCHAMADO" msprop:Generator_ColumnPropNameInTable="DESCRICAOTIPOCHAMADOColumn" msprop:Generator_UserColumnName="DESCRICAOTIPOCHAMADO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDCHAMADO" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIDCHAMADO" msprop:Generator_ColumnPropNameInRow="IDCHAMADO" msprop:Generator_ColumnPropNameInTable="IDCHAMADOColumn" msprop:Generator_UserColumnName="IDCHAMADO" type="xs:int" />
+              <xs:element name="DATAAGENDAMENTO" msprop:Generator_ColumnVarNameInTable="columnDATAAGENDAMENTO" msprop:Generator_ColumnPropNameInRow="DATAAGENDAMENTO" msprop:Generator_ColumnPropNameInTable="DATAAGENDAMENTOColumn" msprop:Generator_UserColumnName="DATAAGENDAMENTO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IDITEMCHAMADO" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIDITEMCHAMADO" msprop:Generator_ColumnPropNameInRow="IDITEMCHAMADO" msprop:Generator_ColumnPropNameInTable="IDITEMCHAMADOColumn" msprop:Generator_UserColumnName="IDITEMCHAMADO" type="xs:int" />
+              <xs:element name="CELULARPOSSUICARREGADOR" msprop:Generator_ColumnVarNameInTable="columnCELULARPOSSUICARREGADOR" msprop:Generator_ColumnPropNameInRow="CELULARPOSSUICARREGADOR" msprop:Generator_ColumnPropNameInTable="CELULARPOSSUICARREGADORColumn" msprop:Generator_UserColumnName="CELULARPOSSUICARREGADOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CELULARPOSSUICARTAOMEMORIA" msprop:Generator_ColumnVarNameInTable="columnCELULARPOSSUICARTAOMEMORIA" msprop:Generator_ColumnPropNameInRow="CELULARPOSSUICARTAOMEMORIA" msprop:Generator_ColumnPropNameInTable="CELULARPOSSUICARTAOMEMORIAColumn" msprop:Generator_UserColumnName="CELULARPOSSUICARTAOMEMORIA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CELULARPOSSUICHIP" msprop:Generator_ColumnVarNameInTable="columnCELULARPOSSUICHIP" msprop:Generator_ColumnPropNameInRow="CELULARPOSSUICHIP" msprop:Generator_ColumnPropNameInTable="CELULARPOSSUICHIPColumn" msprop:Generator_UserColumnName="CELULARPOSSUICHIP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDPRODUTO" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIDPRODUTO" msprop:Generator_ColumnPropNameInRow="IDPRODUTO" msprop:Generator_ColumnPropNameInTable="IDPRODUTOColumn" msprop:Generator_UserColumnName="IDPRODUTO" type="xs:int" />
+              <xs:element name="NOMEPRODUTO" msprop:Generator_ColumnVarNameInTable="columnNOMEPRODUTO" msprop:Generator_ColumnPropNameInRow="NOMEPRODUTO" msprop:Generator_ColumnPropNameInTable="NOMEPRODUTOColumn" msprop:Generator_UserColumnName="NOMEPRODUTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMEUSUARIO" msprop:Generator_ColumnVarNameInTable="columnNOMEUSUARIO" msprop:Generator_ColumnPropNameInRow="NOMEUSUARIO" msprop:Generator_ColumnPropNameInTable="NOMEUSUARIOColumn" msprop:Generator_UserColumnName="NOMEUSUARIO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMECLIENTE" msprop:Generator_ColumnVarNameInTable="columnNOMECLIENTE" msprop:Generator_ColumnPropNameInRow="NOMECLIENTE" msprop:Generator_ColumnPropNameInTable="NOMECLIENTEColumn" msprop:Generator_UserColumnName="NOMECLIENTE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMPRESA" msprop:Generator_ColumnVarNameInTable="columnEMPRESA" msprop:Generator_ColumnPropNameInRow="EMPRESA" msprop:Generator_ColumnPropNameInTable="EMPRESAColumn" msprop:Generator_UserColumnName="EMPRESA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CPF_CNPJ" msprop:Generator_ColumnVarNameInTable="columnCPF_CNPJ" msprop:Generator_ColumnPropNameInRow="CPF_CNPJ" msprop:Generator_ColumnPropNameInTable="CPF_CNPJColumn" msprop:Generator_UserColumnName="CPF_CNPJ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAIL" msprop:Generator_ColumnVarNameInTable="columnEMAIL" msprop:Generator_ColumnPropNameInRow="EMAIL" msprop:Generator_ColumnPropNameInTable="EMAILColumn" msprop:Generator_UserColumnName="EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RUA" msprop:Generator_ColumnVarNameInTable="columnRUA" msprop:Generator_ColumnPropNameInRow="RUA" msprop:Generator_ColumnPropNameInTable="RUAColumn" msprop:Generator_UserColumnName="RUA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NUMERO" msprop:Generator_ColumnVarNameInTable="columnNUMERO" msprop:Generator_ColumnPropNameInRow="NUMERO" msprop:Generator_ColumnPropNameInTable="NUMEROColumn" msprop:Generator_UserColumnName="NUMERO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAIRRO" msprop:Generator_ColumnVarNameInTable="columnBAIRRO" msprop:Generator_ColumnPropNameInRow="BAIRRO" msprop:Generator_ColumnPropNameInTable="BAIRROColumn" msprop:Generator_UserColumnName="BAIRRO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CIDADE" msprop:Generator_ColumnVarNameInTable="columnCIDADE" msprop:Generator_ColumnPropNameInRow="CIDADE" msprop:Generator_ColumnPropNameInTable="CIDADEColumn" msprop:Generator_UserColumnName="CIDADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UF" msprop:Generator_ColumnVarNameInTable="columnUF" msprop:Generator_ColumnPropNameInRow="UF" msprop:Generator_ColumnPropNameInTable="UFColumn" msprop:Generator_UserColumnName="UF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CELULAR1" msprop:Generator_ColumnVarNameInTable="columnCELULAR1" msprop:Generator_ColumnPropNameInRow="CELULAR1" msprop:Generator_ColumnPropNameInTable="CELULAR1Column" msprop:Generator_UserColumnName="CELULAR1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CELULAR2" msprop:Generator_ColumnVarNameInTable="columnCELULAR2" msprop:Generator_ColumnPropNameInRow="CELULAR2" msprop:Generator_ColumnPropNameInTable="CELULAR2Column" msprop:Generator_UserColumnName="CELULAR2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELFIXO1" msprop:Generator_ColumnVarNameInTable="columnTELFIXO1" msprop:Generator_ColumnPropNameInRow="TELFIXO1" msprop:Generator_ColumnPropNameInTable="TELFIXO1Column" msprop:Generator_UserColumnName="TELFIXO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELFIXO2" msprop:Generator_ColumnVarNameInTable="columnTELFIXO2" msprop:Generator_ColumnPropNameInRow="TELFIXO2" msprop:Generator_ColumnPropNameInTable="TELFIXO2Column" msprop:Generator_UserColumnName="TELFIXO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHATSAPP" msprop:Generator_ColumnVarNameInTable="columnWHATSAPP" msprop:Generator_ColumnPropNameInRow="WHATSAPP" msprop:Generator_ColumnPropNameInTable="WHATSAPPColumn" msprop:Generator_UserColumnName="WHATSAPP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="view_chamadopadrao" msprop:Generator_TableClassName="view_chamadopadraoDataTable" msprop:Generator_TableVarName="tableview_chamadopadrao" msprop:Generator_RowChangedName="view_chamadopadraoRowChanged" msprop:Generator_TablePropName="view_chamadopadrao" msprop:Generator_RowDeletingName="view_chamadopadraoRowDeleting" msprop:Generator_RowChangingName="view_chamadopadraoRowChanging" msprop:Generator_RowEvHandlerName="view_chamadopadraoRowChangeEventHandler" msprop:Generator_RowDeletedName="view_chamadopadraoRowDeleted" msprop:Generator_RowClassName="view_chamadopadraoRow" msprop:Generator_UserTableName="view_chamadopadrao" msprop:Generator_RowEvArgName="view_chamadopadraoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DESCRICAOTIPOCHAMADO" msprop:Generator_ColumnVarNameInTable="columnDESCRICAOTIPOCHAMADO" msprop:Generator_ColumnPropNameInRow="DESCRICAOTIPOCHAMADO" msprop:Generator_ColumnPropNameInTable="DESCRICAOTIPOCHAMADOColumn" msprop:Generator_UserColumnName="DESCRICAOTIPOCHAMADO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IDCHAMADO" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIDCHAMADO" msprop:Generator_ColumnPropNameInRow="IDCHAMADO" msprop:Generator_ColumnPropNameInTable="IDCHAMADOColumn" msprop:Generator_UserColumnName="IDCHAMADO" type="xs:int" />
+              <xs:element name="DATAAGENDAMENTO" msprop:Generator_ColumnVarNameInTable="columnDATAAGENDAMENTO" msprop:Generator_ColumnPropNameInRow="DATAAGENDAMENTO" msprop:Generator_ColumnPropNameInTable="DATAAGENDAMENTOColumn" msprop:Generator_UserColumnName="DATAAGENDAMENTO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VALOTOTAL" msprop:Generator_ColumnVarNameInTable="columnVALOTOTAL" msprop:Generator_ColumnPropNameInRow="VALOTOTAL" msprop:Generator_ColumnPropNameInTable="VALOTOTALColumn" msprop:Generator_UserColumnName="VALOTOTAL" type="xs:decimal" />
+              <xs:element name="IDITEMCHAMADO" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIDITEMCHAMADO" msprop:Generator_ColumnPropNameInRow="IDITEMCHAMADO" msprop:Generator_ColumnPropNameInTable="IDITEMCHAMADOColumn" msprop:Generator_UserColumnName="IDITEMCHAMADO" type="xs:int" />
+              <xs:element name="PADRAOPOSSUICARREGADOR" msprop:Generator_ColumnVarNameInTable="columnPADRAOPOSSUICARREGADOR" msprop:Generator_ColumnPropNameInRow="PADRAOPOSSUICARREGADOR" msprop:Generator_ColumnPropNameInTable="PADRAOPOSSUICARREGADORColumn" msprop:Generator_UserColumnName="PADRAOPOSSUICARREGADOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PADRAOMARCAMODELOSERIE" msprop:Generator_ColumnVarNameInTable="columnPADRAOMARCAMODELOSERIE" msprop:Generator_ColumnPropNameInRow="PADRAOMARCAMODELOSERIE" msprop:Generator_ColumnPropNameInTable="PADRAOMARCAMODELOSERIEColumn" msprop:Generator_UserColumnName="PADRAOMARCAMODELOSERIE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VALORITEM" msprop:Generator_ColumnVarNameInTable="columnVALORITEM" msprop:Generator_ColumnPropNameInRow="VALORITEM" msprop:Generator_ColumnPropNameInTable="VALORITEMColumn" msprop:Generator_UserColumnName="VALORITEM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IDPRODUTO" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnIDPRODUTO" msprop:Generator_ColumnPropNameInRow="IDPRODUTO" msprop:Generator_ColumnPropNameInTable="IDPRODUTOColumn" msprop:Generator_UserColumnName="IDPRODUTO" type="xs:int" />
+              <xs:element name="NOMEPRODUTO" msprop:Generator_ColumnVarNameInTable="columnNOMEPRODUTO" msprop:Generator_ColumnPropNameInRow="NOMEPRODUTO" msprop:Generator_ColumnPropNameInTable="NOMEPRODUTOColumn" msprop:Generator_UserColumnName="NOMEPRODUTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMEUSUARIO" msprop:Generator_ColumnVarNameInTable="columnNOMEUSUARIO" msprop:Generator_ColumnPropNameInRow="NOMEUSUARIO" msprop:Generator_ColumnPropNameInTable="NOMEUSUARIOColumn" msprop:Generator_UserColumnName="NOMEUSUARIO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOMECLIENTE" msprop:Generator_ColumnVarNameInTable="columnNOMECLIENTE" msprop:Generator_ColumnPropNameInRow="NOMECLIENTE" msprop:Generator_ColumnPropNameInTable="NOMECLIENTEColumn" msprop:Generator_UserColumnName="NOMECLIENTE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMPRESA" msprop:Generator_ColumnVarNameInTable="columnEMPRESA" msprop:Generator_ColumnPropNameInRow="EMPRESA" msprop:Generator_ColumnPropNameInTable="EMPRESAColumn" msprop:Generator_UserColumnName="EMPRESA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CPF_CNPJ" msprop:Generator_ColumnVarNameInTable="columnCPF_CNPJ" msprop:Generator_ColumnPropNameInRow="CPF_CNPJ" msprop:Generator_ColumnPropNameInTable="CPF_CNPJColumn" msprop:Generator_UserColumnName="CPF_CNPJ" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAIL" msprop:Generator_ColumnVarNameInTable="columnEMAIL" msprop:Generator_ColumnPropNameInRow="EMAIL" msprop:Generator_ColumnPropNameInTable="EMAILColumn" msprop:Generator_UserColumnName="EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RUA" msprop:Generator_ColumnVarNameInTable="columnRUA" msprop:Generator_ColumnPropNameInRow="RUA" msprop:Generator_ColumnPropNameInTable="RUAColumn" msprop:Generator_UserColumnName="RUA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NUMERO" msprop:Generator_ColumnVarNameInTable="columnNUMERO" msprop:Generator_ColumnPropNameInRow="NUMERO" msprop:Generator_ColumnPropNameInTable="NUMEROColumn" msprop:Generator_UserColumnName="NUMERO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAIRRO" msprop:Generator_ColumnVarNameInTable="columnBAIRRO" msprop:Generator_ColumnPropNameInRow="BAIRRO" msprop:Generator_ColumnPropNameInTable="BAIRROColumn" msprop:Generator_UserColumnName="BAIRRO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CIDADE" msprop:Generator_ColumnVarNameInTable="columnCIDADE" msprop:Generator_ColumnPropNameInRow="CIDADE" msprop:Generator_ColumnPropNameInTable="CIDADEColumn" msprop:Generator_UserColumnName="CIDADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UF" msprop:Generator_ColumnVarNameInTable="columnUF" msprop:Generator_ColumnPropNameInRow="UF" msprop:Generator_ColumnPropNameInTable="UFColumn" msprop:Generator_UserColumnName="UF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CELULAR1" msprop:Generator_ColumnVarNameInTable="columnCELULAR1" msprop:Generator_ColumnPropNameInRow="CELULAR1" msprop:Generator_ColumnPropNameInTable="CELULAR1Column" msprop:Generator_UserColumnName="CELULAR1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CELULAR2" msprop:Generator_ColumnVarNameInTable="columnCELULAR2" msprop:Generator_ColumnPropNameInRow="CELULAR2" msprop:Generator_ColumnPropNameInTable="CELULAR2Column" msprop:Generator_UserColumnName="CELULAR2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELFIXO1" msprop:Generator_ColumnVarNameInTable="columnTELFIXO1" msprop:Generator_ColumnPropNameInRow="TELFIXO1" msprop:Generator_ColumnPropNameInTable="TELFIXO1Column" msprop:Generator_UserColumnName="TELFIXO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELFIXO2" msprop:Generator_ColumnVarNameInTable="columnTELFIXO2" msprop:Generator_ColumnPropNameInRow="TELFIXO2" msprop:Generator_ColumnPropNameInTable="TELFIXO2Column" msprop:Generator_UserColumnName="TELFIXO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHATSAPP" msprop:Generator_ColumnVarNameInTable="columnWHATSAPP" msprop:Generator_ColumnPropNameInRow="WHATSAPP" msprop:Generator_ColumnPropNameInTable="WHATSAPPColumn" msprop:Generator_UserColumnName="WHATSAPP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:view_chamadocelular" />
+      <xs:field xpath="mstns:IDCHAMADO" />
+      <xs:field xpath="mstns:IDITEMCHAMADO" />
+      <xs:field xpath="mstns:IDPRODUTO" />
+    </xs:unique>
+    <xs:unique name="view_chamadopadrao_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:view_chamadopadrao" />
+      <xs:field xpath="mstns:IDCHAMADO" />
+      <xs:field xpath="mstns:IDITEMCHAMADO" />
+      <xs:field xpath="mstns:IDPRODUTO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
